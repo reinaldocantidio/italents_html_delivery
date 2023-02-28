@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-fundo1: #9dc7d3;
+    --cor-fundo2: #5fcd8b;
+    --cor-padrao1:#474c59;
+    --cor-padrao2: #f65e00;
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Estilização - Header */
+
+.cabecalho {
+    background-image: url('/img/food_header.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.menu .ul-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+        
+    
+}
+
+.ul-menu li {
+    list-style: none;
+    padding: 2rem;
+    color: antiquewhite;
+    
+}
+
+/* Estilização - login*/
+#login{
+    display: flex;
+    flex-direction: column;
+}
+
+#arquivo-logo-empresa{
+    width: 30%;    
+}
+#logo-empresa-login{
+    background-color: var(--cor-fundo1);
+    padding-left: 2rem;
+}
+
+#arquivo-imagem-login{
+    width: 7%;
+    padding-top: 5rem;
+    padding-left: 10rem;
+}
+
+#login-entrada {
+    display: flex;    
+    width: 50%;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    justify-content: space-around;
+    color: var(--cor-padrao1);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+button {
+    width: 10rem;
+    font-size: 15px;
+    font-weight: 700;
+    color: #474c59;
+       
+}
+
+/*                     */
+
+
+.bi-file-person {
+    font-size: 45px;
+    color: var(--cor-fundo2);
+}
+
+#imagem-localizacao {
+    display: flex;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.bi-geo-alt {
+    font-size: 40px;
+    color: var(--cor-fundo2);
+}
+
+.nome-localizacao {
+    
+    font-size: 30px;
+    color: var(--cor-fundo2);
+    padding-left: 0;
+    padding-right:2.5rem;
+}
+
+.bi-card-image {
+    font-size: 45px;
+    color: var(--cor-fundo2);
+    margin-right: 4rem;
+}
+
+/* Estilização - mensagens*/
+
+#mensagens-inicio {
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--cor-fundo1);
+    
+}
+
+#nome-empresa {
+    font-weight: 700;
+    font-style: bold;    
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor-padrao2);
+}
+ 
+
+#logo-empresa {
+    width: 30%;
+    padding: 0;
+}
+
+.mensagem {
+    color: var(--cor-padrao1);
+    font-size: 25px;
+}
+
+/* Estilização - input*/
+
+#input {
+    display: flex;
+    padding-top: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+i.bi-search {
+    position: absolute;
+    color: var(--cor-padrao2);
+    padding-top: .2rem;
+    padding-left: 3rem;
+    font-size: 40px;
+    margin-left: 1.5rem;
+}
+
+#input-text {
+        width: 90%;
+        margin: auto;
+        font-size: 25px;
+        padding: 1.2rem 0 1.2rem;
+        padding-left: 4rem;
+        border: 2mm ridge rgb(244, 213, 155);
+        text-align: center;
+    }
+
+input:focus{
+    outline: 0;
+}
+
+input[type=text]{
+    color: var(--cor-padrao1);
+}
+
+/* Estilização - categoria*/
+
+#categorias {
+    display: flex;
+    justify-content: space-around;
+}
+
+#categoria-ul {
+    display: flex;
+    margin: auto;
+}
+
+.categoria-a {
+    margin: 3rem 5rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+li.categoria{
+    margin: auto;
+}
+
+.categoria{
+    
+    color: var(--cor-padrao1);
+    border: solid var(--cor-padrao2);
+    border-radius: 1.5rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1rem;
+    font-weight: 400;
+    text-align: center;
+    transform: 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.categoria:hover{
+    background-color: var(--cor-padrao2);
+    border-color: var(--cor-padrao1);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px var(--cor-padrao1);
+}
+
+/*Estilização - produto*/
+
+
+#cards-produtos{
+    display: flex;
+}
+
+.card-produto{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px var(--cor-padrao1);
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+}
+
+.card-produto img{
+    display: block;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+.card-produto:hover{
+    box-shadow: inset 50px 0 0 0;
+    color: white;
+    
+}
+
+h3.nome-do-produto{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    color: var(--cor-padrao1);
+    margin-bottom: 1.3rem;
+    margin-top: 1rem;
+}
+
+/* Estilização- ver mais */
+
+#ver-mais{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#ver-mais a{
+    color: var(--cor-padrao1);
+    text-decoration: none;
+    margin: .8rem 2rem;
+}
+
+
+/* Estilização- avaliação */
+
+#avaliacao{
+    text-align: center;
+    border: .5rem outset var(--cor-padrao2);
+    outline: .5rem solid var(--cor-fundo1);
+    box-shadow: 0 0 0 1rem grey;
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font: bold 1rem sans-serif;
+}
+
+#titulo-avaliacao{
+    font-size: 40px;
+    color: var(--cor-padrao2);
+    text-shadow: 2px 2px var(--cor-padrao1);
+}
+
+.bi-hand-thumbs-up{
+    font-size: 40px;
+    color: var(--cor-padrao2);
+    text-shadow: 2px 2px var(--cor-padrao1);
+}
+
+.bi-hand-thumbs-down{
+    font-size: 40px;
+    color: var(--cor-padrao2);
+    text-shadow: 1.5px 1.5px var(--cor-padrao1);
+}
+
+#frase-avaliacao{
+    font-size: 25px;
+    color: var(--cor-padrao1);
+    padding: 2rem;
+}
+
+
+/* Estilização- footer*/
+
+.footer {
+    background-color: var(--cor-fundo2);
+    margin-top: 2rem;
+
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-weight: 500;
+}
+
+.footer-card a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-card li{
+    list-style: none;
+    color: var(--cor-padrao1);
+    
+}
+
+.footer-item {
+    margin: 0.5rem;
+}
+
+i.bi-house-fill {
+    font-size: 35px;
+    color: var(--cor-padrao2);
+}
+
+i.bi-emoji-smile {
+    font-size: 35px;
+    color: var(--cor-padrao2);
+}
+
+i.bi-upc-scan {
+    font-size: 35px;
+    color: var(--cor-padrao2);
+}
+
+i.bi-cart {
+    font-size: 35px;
+    color: var(--cor-padrao2);
+}
+
+i.bi-stickies {
+    font-size: 35px;
+    color: var(--cor-padrao2);
+}
+
+/* Estilização- cadastro usuário */
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-label {
+    color: var(--cor-padrao1);
+}
+
+#formulario-titulo{
+    padding: 3rem;
+    color: var(--cor-padrao2);
+}
+
+#formulario-itens{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 3rem;   
+}
+
+#formulario-itens div{
+    padding: .5rem;
+}
+
+input[type=text] {
+    color: var(--cor-padrao1);
+    margin-left: 1rem;
+}
+
+input[type=radio] {
+    margin: .5rem;
+}
+
+#botao-cadastro-usuario {
+    margin-top: 2rem;
+}
+
+
+/* Estilização- cadastro produto */
+
+#formulario-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-p-label {
+    color: var(--cor-padrao1);
+}
+
+#formulario-p-titulo{
+    padding: 3rem;
+    color: var(--cor-padrao2);
+}
+
+#formulario-p-itens{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 3rem;   
+}
+
+#formulario-p-itens div{
+    padding: .5rem;
+}
+
+input[type=text] {
+    color: var(--cor-padrao1);
+    margin-left: 1rem;
+}
+
+input[type=radio] {
+    margin: .5rem;
+}
+
+#botao-cadastro-produto {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+
+/* Estilização- carrinho */
+
+#carrinho-topo {
+    display: flex;
+    font-size: 45px;
+    color: var(--cor-padrao2);
+    padding: 2rem;
+    align-items: start;
+    justify-content: space-between;
+}
+
+i.bi-chevron-double-left{
+    color: var(--cor-padrao1);
+}
+i.bi-cart-x {
+    color: var(--cor-padrao1);
+}
+
+#produto1, #produto2{
+    padding-top: 4rem;
+}
+
+#produto1-img, #produto2-img {
+    width: 25%;
+}
+
+#produto1-titulo, #produto2-titulo {
+    display: flex;
+    color: var(--cor-padrao2);
+    font-size: 18px;
+}
+
+.quantidade {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+    width: 4rem;    
+}
+
+i.bi-trash3{
+    
+    color: red;
+    font-weight: 400;
+}
+
+.valor{
+    color: rgb(7, 7, 118);
+    font-size: 20px;
+}
+
+#cupom{
+    padding-top: 5rem;
+        
+}
+
+#total {
+    padding-top: 3rem;
+    font-size: 18px;
+    color: var(--cor-padrao1);
+    font-weight: 500;
+    font: bold
+}
+
+#botao-pagamento {
+    margin-top: 3rem;
+}
+
+/* Estilização- produto */
+
+#produto-topo {
+    margin-top: 3rem;
+
+}
+
+i.bi-chevron-double-left {
+    font-size: 20px;
+    color: var(--cor-padrao1);
+}
+i.bi-heart-fill {
+    font-size: 20px;
+    color: var(--cor-padrao2);
+    margin-left: 55rem;
+}
+
+#produto001{
+    margin-top: 3rem; 
+     
+}
+
+#nome-produto001{
+    font-size: 30px;
+    color: var(--cor-padrao2);
+}
+
+#produto001 p{
+    width: 75%;
+}
+
+#texto-produto001{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    color: var(--cor-padrao1);
+}
+
+#produto001-arquivo{
+    width: 40%;
+}
+
+.quantidade-produto001{
+    display: flex;
+    justify-items: auto;
+    width: 5rem;
+    font-size: 18px;
+    color: var(--cor-padrao1);
+    margin-bottom: 2rem;
+}
+
+#quantidade-selecionada{
+    margin-left: 1rem;
+}
+
+#valor-produto001{
+    font-size: 20px;
+    color: var(--cor-padrao1);
+    margin-bottom: 2rem;
+}
+
+#valor-unitario, #valor-total{
+    color: #f65e00;
+    font-weight: 700;
+}
+
+#finalizar{
+    display: flex;
+
+}
+
+i.bi-cart-plus{
+    font-size: 45px;
+    color: var(--cor-padrao1);
+}
+
+#botao-adicionar{
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+@media screen  and (max-width: 480px){
+    body{
+        width: 100%;        
+    }
+    header{
+        display: flex;
+    }
+    i.bi-geo-alt, .nome-localizacao, .bi-card-image{
+        display: none;
+    }
+    ul.footer-card{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .footer-card a{
+        width: 100%;
+    }
+
+    i.bi-search{
+        position: absolute;
+        margin-right: 3rem;
+        padding-left: 2rem;
+    }
+    #categoria-ul{
+        flex-wrap: wrap;
+    }
+    #cards-produtos{
+        flex-wrap: wrap;
+    }
+    div.card-produto{
+        width: 100%;
+    }
+    #frase-avaliacao{
+        display: none;
+    }
+
+    
+}

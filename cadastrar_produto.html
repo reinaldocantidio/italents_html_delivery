@@ -5,58 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style-padrao.css">
     <title>Cadastro de Produto</title>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li><p>São Paulo, SP</p></li>
-                <li><i class="bi bi-card-image"></i></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+               <a href="login.html"><li><i class="bi bi-file-person"></i></li></a>
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
+                <p class="nome-localizacao">São Paulo, SP</p></li>
+                <a href=""><li><i class="bi bi-card-image"></i></li></a>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>CADASTRO DE PRODUTO</h1>
+    <section id="formulario-p">
+        <h1 id="formulario-p-titulo">CADASTRO DE PRODUTO</h1>
 
-        <form action="">
-            <div>
-                <label for="">NOME DO PRODUTO</label>
-                <input type="text">
+        <form action="" id="formulario-p-campos">
+            <div id="formulario-p-itens">
+                <label for="" class="formulario-p-label">NOME DO PRODUTO</label>
+                <input type="text" class="formulario-p-input">
 
-                <label for="">DESCRIÇÃO DO PRODUTO</label>
-                <input type="text">
+                <label for="" class="formulario-p-label">DESCRIÇÃO DO PRODUTO</label>
+                <input type="text" class="formulario-p-input">
 
-                <label for="">CATEGORIA</label>
-                <input type="text">
+                <label for="" class="formulario-p-label">CATEGORIA</label>
+                <input type="text" class="formulario-p-input">
 
-                <label for="">PREÇO UNITÁRIO</label>
-                <input type="text">
+                <label for="" class="formulario-p-label">PREÇO UNITÁRIO</label>
+                <input type="text" class="formulario-p-input">
 
-                <label for="">CÓDIGO DE BARRAS/label>
-                <input type="text">
-               
-
-                <button>CADASTRAR PRODUTO</button>
-
-
+                <label for="" class="formulario-p-label">CÓDIGO DE BARRAS</label>
+                <input type="text" class="formulario-p-input">
             </div>
+            <button id="botao-cadastro-produto">CADASTRAR PRODUTO</button>
 
         </form>
 
     </section>
 
 
-    <footer>
-        <ul>
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
             <li>
-                <a href=""><i class="bi bi-house-fill"></i><p>HOME</p></a>
-                <li><a href=""><i class="bi bi-emoji-smile"></i><p>PERFIL</p></a></li>
-                <li><a href=""><i class="bi bi-ticket-detailed"></i><p>CUPONS</p></a></li>
-                <li><a href=""><i class="bi bi-star-fill"></i><p>PREÇOS</p></a></li>
+                <a href="home.html"><li class="footer-item"><i class="bi bi-house-fill"></i><p class="footer-nome-item">HOME</p></li></a>
+                <a href="cadastrar_usuario.html"><li class="footer-item"><i class="bi bi-emoji-smile"></i><p class="footer-nome-item">CADASTRO USUÁRIO</p></li></a>
+                <a href="cadastrar_produto.html"><li class="footer-item"><i class="bi bi-upc-scan"></i><p class="footer-nome-item">CADASTRO PRODUTO</p></li></a>
+                <a href="carrinho.html"><li class="footer-item"><i class="bi bi-cart"></i><p class="footer-nome-item">CARRINHO</p></li></a>
+                <a href="produto.html"><li class="footer-item"><i class="bi bi-stickies"></i><p class="footer-nome-item">PRODUTO</p ></li></a>
             </li>
         </ul>
     </footer>
