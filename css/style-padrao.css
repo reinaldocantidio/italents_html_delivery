@@ -82,6 +82,22 @@ button {
        
 }
 
+/*----Inserção HTM -------- */
+
+.card-teste{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    width: 50%;
+    background-color: #f65e00;
+    border: 3px solid;
+    z-index: 999;
+}
+
+
+
 /*                     */
 
 
@@ -480,17 +496,25 @@ i.bi-cart-x {
 }
 
 #produto1, #produto2{
+    display: flex;
+    width: 85%;
+    justify-items: auto;
     padding-top: 4rem;
 }
 
+#produto1-imagem, #produto2-imagem{
+    width: 25vh;
+}
+
 #produto1-img, #produto2-img {
-    width: 25%;
+    width: 100%;
 }
 
 #produto1-titulo, #produto2-titulo {
     display: flex;
     color: var(--cor-padrao2);
     font-size: 18px;
+    margin-left: 2rem;
 }
 
 .quantidade {
@@ -503,7 +527,13 @@ i.bi-cart-x {
 i.bi-trash3{
     
     color: red;
+    width: 100%;
     font-weight: 400;
+    margin-left: 2rem;
+}
+
+#valor-excluir{
+    width: 50px;
 }
 
 .valor{
