@@ -13,8 +13,10 @@
         <nav class="menu">
             <ul class="ul-menu">
                <a href="login.html"><li><i class="bi bi-file-person"></i></li></a>
-                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
-                <p class="nome-localizacao">São Paulo, SP</p></li>
+                <li class="imagem-localizacao"><i class="bi bi-geo-alt"></i>
+                    <input id="cep" type="text" placeholder="Digite seu CEP">
+                    <button onclick="consultaEndereco()">OK</button>
+                <p class="nome-localizacao"></p></li>
                 <a href=""><li><i class="bi bi-card-image"></i></li></a>
             </ul>
         </nav>
@@ -72,7 +74,7 @@
         <footer id="footer" class="footer">
             <ul class="footer-card">
                 <li>
-                    <a href="home.html"><li class="footer-item"><i class="bi bi-house-fill"></i><p class="footer-nome-item">HOME</p></li></a>
+                    <a href="index.html"><li class="footer-item"><i class="bi bi-house-fill"></i><p class="footer-nome-item">HOME</p></li></a>
                     <a href="cadastrar_usuario.html"><li class="footer-item"><i class="bi bi-emoji-smile"></i><p class="footer-nome-item">CADASTRO USUÁRIO</p></li></a>
                     <a href="cadastrar_produto.html"><li class="footer-item"><i class="bi bi-upc-scan"></i><p class="footer-nome-item">CADASTRO PRODUTO</p></li></a>
                     <a href="carrinho.html"><li class="footer-item"><i class="bi bi-cart"></i><p class="footer-nome-item">CARRINHO</p></li></a>
@@ -81,5 +83,7 @@
             </ul>
         </footer>
     </main>
+
+        <script src="/teste/home.js"></script>
 </body>
 </html>
